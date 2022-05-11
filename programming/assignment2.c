@@ -76,8 +76,7 @@ int inputBinary_and_returnDecimal() {
 		value += (t ^ sign) * (1 << i);
 	}
 
-	if (sign) 
-		return -(value + 1);
+	if (sign) return -(value + 1);
 
 	return value;
 }
@@ -86,6 +85,7 @@ void convertIntoBinary_and_print(int n) {
 	int sign;
 	(sign = n < 0) && (n = -(n + 1));
 
+	printf("%d", sign);
 	for (int i = 6; i >= 0; i--)
 		printf("%d", ((n / (1 << i)) % 2) ^ sign);
 }
