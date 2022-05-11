@@ -46,7 +46,7 @@ void binary_add() {
 	int sum = n1 + n2;
 	printf("두 이진수의 합은 ");
 	convertIntoBinary_and_print(sum);
-	printf("이고, 십진수로 %d 입니다.", sum);
+	printf("이고, 십진수로 %d 입니다.\n", sum);
 }
 
 void binary_subtract() {
@@ -56,9 +56,9 @@ void binary_subtract() {
 	int n2 = inputBinary_and_returnDecimal();
 
 	int sub = n1 - n2;
-	printf("두 이진수의 합은 ");
+	printf("두 이진수의 차는 ");
 	convertIntoBinary_and_print(sub);
-	printf("이고, 십진수로 %d 입니다.", sub);
+	printf("이고, 십진수로 %d 입니다.\n", sub);
 }
 
 void whiteSpaceRemove() {
