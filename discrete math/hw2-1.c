@@ -1,6 +1,10 @@
 /*
- * String Bubble Sort Implementation
- */
+* 2022.05.12.
+* 
+* 컴퓨터수학1
+* 중간 과제, 레포트
+* String Bubble Sort Implementation
+*/
 #include <stdio.h>
 #define SIZE 18
 
@@ -10,6 +14,7 @@
  * str1 < str2 일 때 -1을
  * 반환하는 함수 */
 int compareString(char* a, char* b) {
+
 	while (*a != '\0' && *b != '\0' && *a == *b) a++, b++;
 
 	if (*a == *b) return 0;
